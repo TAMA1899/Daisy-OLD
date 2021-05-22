@@ -63,11 +63,13 @@ from DaisyX.modules.helper_funcs.misc import paginate_modules
 from DaisyX.modules.helper_funcs.readable_time import get_readable_time
 
 PM_START_TEXT = """
-Hello there, I'm [𝓓𝓪𝓲𝓼𝔂 𝓧](https://telegra.ph/file/473cc17913393959e0667.jpg)
+Hello Friends, saya [ᴀꜱꜱɪꜱᴛᴇɴ ɢʀᴜʙ ᴡᴏᴀʜ](https://telegra.ph/file/ea7086e771d3b49dded34.jpg)
 
-I am an 𝐴𝑛𝑖𝑚𝑒 Themed Group Managing Bot and I will help in managing your group
+Saya adalah Group Manager Bot dan saya akan membantu memanage Grub anda. 
 
-✪ Make sure you read *INFO* Section Below ✪ 
+✪ Owner : [°ᴹᴿ° RO-BOT ࿐](https://t.me/justthetech) ✪
+✪ Baca semua **INFO** dibawah biar paham ✪
+✪ Ketik /help untuk melihat daftar fitur-fitur saya ✪
 """
 
 buttons = [
@@ -79,17 +81,19 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="💫 Add Daisy to your group 💫", url="t.me/daisyXBot?startgroup=true"
+            text="💫 Add Daisy to your group 💫", url="t.me/assistenwoah_bot?startgroup=true"
         ),
     ],
 ]
 
 
 HELP_STRINGS = f"""
-*Main Commands :* [🤖](https://telegra.ph/file/473cc17913393959e0667.jpg)
+Hello Friends, saya [ᴀꜱꜱɪꜱᴛᴇɴ ɢʀᴜʙ ᴡᴏᴀʜ](https://telegra.ph/file/ea7086e771d3b49dded34.jpg)
+
+Saya adalah Group Manager Bot dan saya akan membantu memanage Grub anda. 
+
 ✪ /start: Starts me! You've probably already used this.
 ✪ /help: Click this, I'll let you know about myself!
-✪ /donate: You can support my creater using this command.
 ✪ /settings: 
    ◔ in PM: will send you your settings for all supported modules.
    ◔ in a Group: will redirect you to pm, with all that chat's settings.
@@ -99,9 +103,8 @@ HELP_STRINGS = f"""
 )
 
 
-DONATE_STRING = """Heya, glad to hear you want to donate!
-You can donate to the original writer's of the Base code,
-Support them  [Inuka](t.me/InukaASiTH),[Jason](t.me/imjanindu),"""
+DONATE_STRING = """Hey, jika kamu ingin support cukup dengan doa. Terimakasih ❤️
+Support [°ᴹᴿ° RO-BOT ࿐](t.me/justthetech)"""
 
 IMPORTED = {}
 MIGRATEABLE = []
