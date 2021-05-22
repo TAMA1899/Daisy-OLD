@@ -88,14 +88,8 @@ buttons = [
 ]
 
 
-HELP_STRINGS = """
-*Main Commands :* [🤖](https://telegra.ph/file/ea7086e771d3b49dded34.jpg)
-
-Hello Friends, saya ASSISTEN WOAH BOT
-
-Saya adalah Group Manager Bot dan saya akan membantu memanage Grub anda. 
-
-✪  Owner : [ RO-BOT ࿐](https://t.me/justthetech) ✪
+HELP_STRINGS = f"""
+*Main Commands :* [🤖](https://telegra.ph/file/473cc17913393959e0667.jpg)
 ✪ /start: Starts me! You've probably already used this.
 ✪ /help: Click this, I'll let you know about myself!
 ✪ /donate: You can support my creater using this command.
@@ -106,7 +100,6 @@ Saya adalah Group Manager Bot dan saya akan membantu memanage Grub anda.
     dispatcher.bot.first_name,
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
 )
-
 
 
 DONATE_STRING = """Hey, jika kamu ingin support cukup dengan doa. Terimakasih ❤️
