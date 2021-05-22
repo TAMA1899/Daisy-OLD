@@ -82,38 +82,38 @@ def gban(update: Update, context: CallbackContext):
 
     if not user_id:
         message.reply_text(
-            "You don't seem to be referring to a user or the ID specified is incorrect.."
+            "cari yang bener bodo!"
         )
         return
 
     if int(user_id) in DEV_USERS:
         message.reply_text(
-            "That user is part of the Association\nI can't act against our own."
+            "dia Lord Robot gue tolol. "
         )
         return
 
     if int(user_id) in DRAGONS:
         message.reply_text(
-            "I spy, with my little eye... a disaster! Why are you guys turning on each other?"
+            "dia Lord tolol."
         )
         return
 
     if int(user_id) in DEMONS:
         message.reply_text(
-            "OOOH someone's trying to gban a Demon Disaster! *grabs popcorn*"
+            "dia Lord tolol. *grabs popcorn*"
         )
         return
 
     if int(user_id) in TIGERS:
-        message.reply_text("That's a Tiger! They cannot be banned!")
+        message.reply_text("dia Lord tolol.")
         return
 
     if int(user_id) in WOLVES:
-        message.reply_text("That's a Wolf! They cannot be banned!")
+        message.reply_text("dia Lord tolol.")
         return
 
     if user_id == bot.id:
-        message.reply_text("You uhh...want me to kick myself?")
+        message.reply_text("yahh bodo...diri sendiri mau diban! ")
         return
 
     if user_id in [777000, 1087968824]:
@@ -123,14 +123,14 @@ def gban(update: Update, context: CallbackContext):
     try:
         user_chat = bot.get_chat(user_id)
     except BadRequest as excp:
-        if excp.message == "User not found":
-            message.reply_text("I can't seem to find this user.")
+        if excp.message == "cari yang bener, admin tolol!":
+            message.reply_text("cari yang bener, admin tolol! ")
             return ""
         else:
             return
 
     if user_chat.type != "private":
-        message.reply_text("That's not a user!")
+        message.reply_text("cari yang bener, admin tolol!")
         return
 
     if sql.is_user_gbanned(user_id):
