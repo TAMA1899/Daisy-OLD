@@ -367,7 +367,7 @@ def DaisyX_about_callback(update, context):
             text=f"*HELLO FREIENDS!  Saya adalah {dispatcher.bot.first_name} 😍 \n\nSaya akan membantu memangage Grub anda.* "
             f"\n\n Join [GC WOAH](https://t.me/gcwoah) untuk update terbaru {dispatcher.bot.first_name} 🔥"
             f"\n\n Join [CRYPTO & AIRDROP](https://t.me/pejuangairdrops)"
-            f"\n\nSaya dapat memangage GRUB, dengan Special Features [:)](https://telegra.ph/file/ea7086e771d3b49dded34.jpg)", 
+            f"\n\nSaya dapat memanage GRUB, dengan Special Features [:)](https://telegra.ph/file/ea7086e771d3b49dded34.jpg)", 
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
