@@ -88,17 +88,24 @@ buttons = [
 ]
 
 
-HELP_STRINGS = """
-Hello Friends, saya [ᴀꜱꜱɪꜱᴛᴇɴ ɢʀᴜʙ ᴡᴏᴀʜ](https://telegra.ph/file/ea7086e771d3b49dded34.jpg)
+HELP_STRINGS = f"""
+*Main Commands :* [🤖](https://telegra.ph/file/ea7086e771d3b49dded34.jpg)
+
+Hello Friends, saya [ᴀꜱꜱɪꜱᴛᴇɴ ɢʀᴜʙ ᴡᴏᴀʜ](https://t.me/assistenwoah)
 
 Saya adalah Group Manager Bot dan saya akan membantu memanage Grub anda. 
 
+✪  Owner : [°ᴹᴿ° RO-BOT ࿐](https://t.me/justthetech) ✪
 ✪ /start: Starts me! You've probably already used this.
 ✪ /help: Click this, I'll let you know about myself!
+✪ /donate: You can support my creater using this command.
 ✪ /settings: 
    ◔ in PM: will send you your settings for all supported modules.
    ◔ in a Group: will redirect you to pm, with all that chat's settings.
-"""
+""".format(
+    dispatcher.bot.first_name,
+    "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
+)
 
 
 
