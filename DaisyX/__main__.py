@@ -88,7 +88,7 @@ buttons = [
 ]
 
 
-HELP_STRINGS = f"""
+HELP_STRINGS = """
 Hello Friends, saya [ᴀꜱꜱɪꜱᴛᴇɴ ɢʀᴜʙ ᴡᴏᴀʜ](https://telegra.ph/file/ea7086e771d3b49dded34.jpg)
 
 Saya adalah Group Manager Bot dan saya akan membantu memanage Grub anda. 
