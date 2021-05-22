@@ -63,23 +63,27 @@ from DaisyX.modules.helper_funcs.misc import paginate_modules
 from DaisyX.modules.helper_funcs.readable_time import get_readable_time
 
 PM_START_TEXT = """
-Hello there, I'm [𝓓𝓪𝓲𝓼𝔂 𝓧](https://telegra.ph/file/473cc17913393959e0667.jpg)
+HELLO FRIENDS, Saya adalah [ᴀꜱꜱɪꜱᴛᴇɴ ᴡᴏᴀʜ](https://telegra.ph/file/ea7086e771d3b49dded34.jpg)
 
-I am an 𝐴𝑛𝑖𝑚𝑒 Themed Group Managing Bot and I will help in managing your group
+Saya adalah bot untuk memange Grub and saya akan membantu memangage Grub anda. 
 
-✪ Make sure you read *INFO* Section Below ✪ 
+✪ OWNER : [ROBOT](https://t.me/justthetech) ✪
+✪ Baca *INFO* biar paham ✪ 
 """
 
 buttons = [
+    [ 
+        InlineKeyboardButton(
+            text="🛠️ Owner 🛠️", url="t.me/justthetech"
+        ),
+    ], 
     [
-        InlineKeyboardButton(text="🚀 INFO 🚀", callback_data="aboutmanu_"),
-    ],
-    [
-        InlineKeyboardButton(text="❓ Help & Commands ❓", callback_data="help_back"),
+        InlineKeyboardButton(text="❓ Info", callback_data="aboutmanu_"),
+        InlineKeyboardButton(text="Help & Commands ❓", callback_data="help_back")
     ],
     [
         InlineKeyboardButton(
-            text="💫 Add Daisy to your group 💫", url="t.me/daisyXBot?startgroup=true"
+            text="➕ Add Daisy to your group ➕", url="t.me/daisyXBot?startgroup=true"
         ),
     ],
 ]
@@ -100,7 +104,7 @@ HELP_STRINGS = f"""
 )
 
 
-DONATE_STRING = """HEY, jika ingin support cukup dengan doa ❤️
+DONATE_STRING = """HEY, jika ingin support cukup dengan doa ya ❤️
 Support [RO-BOT](t.me/justthetech)"""
 
 IMPORTED = {}
@@ -360,11 +364,10 @@ def DaisyX_about_callback(update, context):
     query = update.callback_query
     if query.data == "aboutmanu_":
         query.message.edit_text(
-            text=f"*😍 Hi again!  The name's {dispatcher.bot.first_name} 😍 \n\nAs  You I'm a next generational group management bot developed by Infinity_Bots.* "
-            f"\n\n 🔥 Join [Infinity_Bots](https://t.me/Infinity_Bots) To Keep Yourself Updated About {dispatcher.bot.first_name} 🔥"
-            f"\n\n I have the normal GROUP MANAGING functions like flood control, a warning system etc but I mainly have the advanced and handy Antispam system and the SIBYL banning system which safegaurds and helps your group from spammers."
-            f"\n\nI Can Manage Your Groups Smoothly, With Some Special Features [:)](https://telegra.ph/file/473cc17913393959e0667.jpg)"
-            f"\n\n👇 You Can Know More About Me By Clicking The Below Buttons 👇",
+            text=f"*HELLO FREIENDS!  Saya adalah {dispatcher.bot.first_name} 😍 \n\nSaya akan membantu memangage Grub anda.* "
+            f"\n\n Join [GC WOAH](https://t.me/gcwoah) untuk update terbaru {dispatcher.bot.first_name} 🔥"
+            f"\n\n Join [CRYPTO & AIRDROP](https://t.me/pejuangairdrops)"
+            f"\n\nSaya dapat memangage GRUB, dengan Special Features [:)](https://telegra.ph/file/ea7086e771d3b49dded34.jpg)", 
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -397,8 +400,8 @@ def DaisyX_about_callback(update, context):
     elif query.data == "aboutmanu_howto":
         query.message.edit_text(
             text=f"* ｢ BASIC HELP 」*"
-            f"\nIf You Can Also Add {dispatcher.bot.first_name} To Your Chats By Clicking [Here](http://t.me/{dispatcher.bot.username}?startgroup=true) And Selecting Chat. \n"
-            f"\n\nYou Can get support {dispatcher.bot.first_name} by joining [InfinityJE](https://t.me/infinityje).\n"
+            f"\nKamu dapat menambah bot {dispatcher.bot.first_name} ke GRUB anda klik [Here](http://t.me/{dispatcher.bot.username}?startgroup=true) And Selecting Chat. \n"
+            f"\n\nJoin untuk update bot {dispatcher.bot.first_name} by joining [gcwoah](https://t.me/gcwoah).\n"
             f"",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -419,8 +422,8 @@ def DaisyX_about_callback(update, context):
     elif query.data == "aboutmanu_credit":
         query.message.edit_text(
             text=f"*{dispatcher.bot.first_name} Is the redisigned version of Daisy and Naruto for the best performance.*"
-            f"\n\nBased on [Daisy](https://github.com/inukaasith/daisy) + [Naruto](https://github.com/imjanindu/narutorobot)."
-            f"\n\n{dispatcher.bot.first_name}'s source code was written by InukaASiTH and Imjanindu"
+            f"\n\nJoin on [GC WOAH](https://t.me/gcwoah) + [CRYPTO AIRDROP](https://t.me/pejuangairdrops)."
+            f"\n\n{dispatcher.bot.first_name}'s source code was written by ROBOT"
             f"\n\nIf Any Question About {dispatcher.bot.first_name}, \nLet Us Know At @{SUPPORT_CHAT}.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
