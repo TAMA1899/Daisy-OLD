@@ -304,8 +304,7 @@ RUN_STRINGS = (
 
 # pat - by @saitamarobot
 PAT_TEMPLATES = (
-    "Pattt Se Headshot!",
-    "{user1} pats {user2} on the head.",
+    "{user1} menembak kepala {user2}",
     "*gently rubs {user2}'s head*.",
     "*{user1} mofumofus {user2}'s head*",
     "*{user1} messes up {user2}'s head*",
