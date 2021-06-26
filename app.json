@@ -73,12 +73,12 @@
       "CASH_API_KEY": {
          "description": "Required for currency converter. Get yours from https://www.alphavantage.co/support/#api-key",
          "required": true,
-         "value": "-xyz"
+         "value": "NFCHE98XOY6OEUVL"
       },
       "TIME_API_KEY": {
          "description": "Required for timezone information. Get yours from https://timezonedb.com/api",
          "required": true,
-         "value": "-xyz"
+         "value": "514V8SYD14MD"
       },
       "DEV_USERS": {
          "description": "ID of users who are Devs of your bot (can use /py etc.). If you are a noob and would come and bother Saitama support then keep the current ID's here at they are and add yours.",
@@ -88,7 +88,7 @@
       "sw_api": {
          "description": "Spamwatch API Token, Get one from @SpamWatchBot.",
          "required": false,
-         "value": ""
+         "value": "Gbd__OR0HAl~y9K2IFcCReV2SdAIurFWk_qlsg3JL4DrNcRwlcjhi_EpumpmmkXM"
       }, 
       "STRICT_GBAN": {
          "description": "Enforce gbans across new groups as well as old groups. When a gbanned user talks, he will be banned.",
@@ -159,7 +159,7 @@
       "AI_API_KEY": {
       "description": "Make your bot talk using Intellivoid's chatbot API, get your key from https://coffeehouse.intellivoid.net/",
          "required": false,
-         "value": ""
+         "value": "dc21cd28c1cffdd69638bdec638b6f110e32317e7987bea6fd2530a148bd2f2871d0553a3770759d6b4922a4e9775220b051e360695cb00c856dde0bf4c97e6f" 
    },      
       "BAN_STICKER": {
          "description": "ID of the sticker you want to use when banning people.",
