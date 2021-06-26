@@ -374,8 +374,6 @@ def DaisyX_about_callback(update, context):
             f"\n\n Join [ᴄʀʏᴘᴛᴏ & ᴀɪʀᴅʀᴏᴘ](https://t.me/pejuangairdrops)"
             f"\n\n Join [ɢᴄ ᴡᴏᴀʜ](https://t.me/gcwoah)"
             f"\n\nSaya akan membantu Anda menjaga ketertiban dalam grup Anda dengan Fitur-Fitur yang menarik! [:)](https://telegra.ph/file/ea7086e771d3b49dded34.jpg)",
-            
-Saya akan membantu Anda menjaga ketertiban dalam grup Anda dengan Fitur-Fitur yang menarik!
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
