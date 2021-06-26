@@ -63,12 +63,21 @@ from DaisyX.modules.helper_funcs.misc import paginate_modules
 from DaisyX.modules.helper_funcs.readable_time import get_readable_time
 
 PM_START_TEXT = """
-HELLO FRIENDS, Saya adalah [ᴀꜱꜱɪꜱᴛᴇɴ ᴡᴏᴀʜ](https://telegra.ph/file/ea7086e771d3b49dded34.jpg)
+**Hello Friends**, [{}](tg://user?id={}) 
 
-Saya adalah bot untuk memange Grub and saya akan membantu memangage Grub anda. 
+𝙎𝙖𝙮𝙖 𝙖𝙙𝙖𝙡𝙖𝙝 𝘽𝙤𝙩𝙩 𝙈𝙖𝙣𝙖𝙟𝙚𝙢𝙚𝙣 𝙂𝙧𝙪𝙥, 
+Saya akan membantu Anda menjaga ketertiban dalam grup Anda dengan Fitur-Fitur yang menarik!
 
-✪ OWNER : [ROBOT](https://t.me/justthetech) ✪
-✪ Baca *INFO* biar paham ✪ 
+❗Ketik /help untuk melihat **panduan pemakaiannya**.
+❗Ketik /start untuk **memuat ulang**
+
+───────────────────────────────────
+𝑺𝒆𝒎𝒖𝒂 𝒐𝒓𝒂𝒏𝒈 𝒑𝒂𝒔𝒕𝒊 𝒎𝒂𝒕𝒊, 𝒕𝒂𝒑𝒊 𝒕𝒊𝒅𝒂𝒌 𝒔𝒆𝒎𝒖𝒂 𝒐𝒓𝒂𝒏𝒈 𝒅𝒂𝒑𝒂𝒕 𝒎𝒆𝒎𝒃𝒆𝒓𝒊 𝒂𝒓𝒕𝒊. 𝑷𝒂𝒔𝒕𝒊𝒌𝒂𝒏 𝒉𝒊𝒅𝒖𝒑𝒎𝒖 𝒃𝒆𝒓𝒂𝒓𝒕𝒊/𝒃𝒆𝒓𝒎𝒂𝒏𝒇𝒂𝒂𝒕 𝒖𝒏𝒕𝒖𝒌 𝒐𝒓𝒂𝒏𝒈 𝒍𝒂𝒊𝒏
+───────────────────────────────────
+
+❁  **Manage By** : [°ᴹᴿ° | ℝ𝕆𝔹𝕆𝕋](https://t.me/justthetech)  
+❁  **Support dengan doa aja guys! Thanks!
+❁  NB : Maaf jika ada kekurangan didalam bot ini** 
 """
 
 buttons = [
@@ -78,33 +87,29 @@ buttons = [
         ),
     ], 
     [
-        InlineKeyboardButton(text="❓ Info", callback_data="aboutmanu_"),
-        InlineKeyboardButton(text="Help & Commands ❓", callback_data="help_back")
+        InlineKeyboardButton(text="❓ ᴜᴘᴅᴀᴛᴇ", URL="t.me/robotmusicupdate"),
+        InlineKeyboardButton(text="ʜᴇʟᴘ ❓", callback_data="help_back")
     ],
     [
         InlineKeyboardButton(
-            text="➕ Add Daisy to your group ➕", url="t.me/daisyXBot?startgroup=true"
+            text="➕ Tambahkan Ke GRUB ➕", url="t.me/daisyXBot?startgroup=true"
         ),
     ],
 ]
 
 
 HELP_STRINGS = f"""
-*Main Commands :* [🤖](https://telegra.ph/file/ea7086e771d3b49dded34.jpg)
-✪ OWNER : [ROBOT](https://t.me/justthetech) ✪
-✪ /start: Starts me! You've probably already used this.
-✪ /help: Click this, I'll let you know about myself!
-✪ /donate: You can support my creater using this command.
-✪ /settings: 
-   ◔ in PM: will send you your settings for all supported modules.
-   ◔ in a Group: will redirect you to pm, with all that chat's settings.
+
+❗Ketik /help untuk melihat **panduan pemakaiannya**.
+❗Ketik /start untuk **memuat ulang**.
+
 """.format(
     dispatcher.bot.first_name,
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
 )
 
 
-DONATE_STRING = """HEY, jika ingin support cukup dengan doa ya ❤️
+DONATE_STRING = """Hey, jika ingin support cukup dengan doa ya ❤️
 Support [RO-BOT](t.me/justthetech)"""
 
 IMPORTED = {}
@@ -226,7 +231,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>".format(
+            "Terima Kasih sudah membangunkan Saya!\n<b>Saya Tidur Sudah:</b> <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
@@ -364,17 +369,20 @@ def DaisyX_about_callback(update, context):
     query = update.callback_query
     if query.data == "aboutmanu_":
         query.message.edit_text(
-            text=f"*HELLO FREIENDS!  Saya adalah {dispatcher.bot.first_name} 😍 \n\nSaya akan membantu memangage Grub anda.* "
-            f"\n\n Join [GC WOAH](https://t.me/gcwoah) untuk update terbaru {dispatcher.bot.first_name} 🔥"
-            f"\n\n Join [CRYPTO & AIRDROP](https://t.me/pejuangairdrops)"
-            f"\n\nSaya dapat memanage GRUB, dengan Special Features [:)](https://telegra.ph/file/ea7086e771d3b49dded34.jpg)", 
+            text=f"Hello, Saya adalah {dispatcher.bot.first_name} 😍 "
+            f"\n\n Join [ᴜᴘᴅᴀᴛᴇ](https://t.me/robbotmusicupdate) untuk update terbaru {dispatcher.bot.first_name} 🔥"
+            f"\n\n Join [ᴄʀʏᴘᴛᴏ & ᴀɪʀᴅʀᴏᴘ](https://t.me/pejuangairdrops)"
+            f"\n\n Join [ɢᴄ ᴡᴏᴀʜ](https://t.me/gcwoah)"
+            f"\n\nSaya akan membantu Anda menjaga ketertiban dalam grup Anda dengan Fitur-Fitur yang menarik! [:)](https://telegra.ph/file/ea7086e771d3b49dded34.jpg)",
+            
+Saya akan membantu Anda menjaga ketertiban dalam grup Anda dengan Fitur-Fitur yang menarik!
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            text="How To Use Me", callback_data="aboutmanu_howto"
+                            text="ᴄᴀʀᴀ ᴘᴇɴɢɢᴜɴᴀᴀɴ", callback_data="aboutmanu_howto"
                         ),
                         InlineKeyboardButton(
                             text="T & C", callback_data="aboutmanu_tac"
@@ -382,10 +390,10 @@ def DaisyX_about_callback(update, context):
                     ],
                     [
                         InlineKeyboardButton(
-                            text="❔Help & Commands", callback_data="help_back"
+                            text="❔ ʜᴇʟᴘ", callback_data="help_back"
                         )
                     ],
-                    [InlineKeyboardButton(text="Back", callback_data="aboutmanu_back")],
+                    [InlineKeyboardButton(text="◀", callback_data="aboutmanu_back")],
                 ]
             ),
         )
@@ -400,8 +408,8 @@ def DaisyX_about_callback(update, context):
     elif query.data == "aboutmanu_howto":
         query.message.edit_text(
             text=f"* ｢ BASIC HELP 」*"
-            f"\nKamu dapat menambah bot {dispatcher.bot.first_name} ke GRUB anda klik [Here](http://t.me/{dispatcher.bot.username}?startgroup=true) And Selecting Chat. \n"
-            f"\n\nJoin untuk update bot {dispatcher.bot.first_name} by joining [gcwoah](https://t.me/gcwoah).\n"
+            f"\nTambahkan Bot {dispatcher.bot.first_name} ke GRUB anda [Klik Disini](http://t.me/{dispatcher.bot.username}?startgroup=true) And Selecting Chat. \n"
+            f"\n\nJoin [ᴜᴘᴅᴀᴛᴇ](https://t.me/robotmusicupdate) untuk info update {dispatcher.bot.first_name}.\n"
             f"",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
