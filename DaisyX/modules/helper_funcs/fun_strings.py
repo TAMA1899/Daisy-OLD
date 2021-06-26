@@ -405,7 +405,7 @@ SLAP_TEMPLATES = (
     "{user1} melempar kursi ke {user2}",
     "{user1} menenggelamkan {user2} dilaut.",
     "{user1} menjahit bibir {user2}",
-    "{user1} melindungi {user2"} dari penjahat",
+    "{user1} melindungi {user2} dari penjahat",
     "{user1} menandang {user2} sampai jatuh",
     "{user1} memotong kaki {user2} dengan kapak!",
     "{user1} mabuk bersama {user2} ",
